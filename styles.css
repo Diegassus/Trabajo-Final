@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: blanchedalmond;
+}
+
+.main{
+    background-color: blueviolet;
+}
+
+footer{
+    background-color: brown;
+}

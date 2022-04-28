@@ -3,103 +3,19 @@
     padding: 0;
 }
 
-a{
-    text-decoration: none;
-}
 /*
 60%# #0D1F2D
 30% 22162B
 10% F49F0A
 */
-.responsive{
-    display: flex;
-    flex-direction: column;
-}
 
-.header, .main, .footer{
-    padding: 5px;
-}
-
-/*   header   */
-
-header{
-    background-color: #333;
-    flex-basis: 70px;
-}
-header .contenedorHeader{
-    display: flex;
-}
-
-header .contenedorHeader .contenedorLogo{
-    background-color: aliceblue;
-    flex-grow: 2;
-    flex-shrink: 0;
-    
-}
-
-header .contenedorHeader .contenedorLogo .logo{
-    margin-left: 9em ;
-    
-}
-
-header .contenedorHeader .contenedorLogo .logo img{
-    background-color: #F49F0A;
-    border-radius: 50%;
-}
-/*
-menu responsive
-*/
-header .contenedorHeader .contenedorMenu-responsive{
-    flex-grow: 1;
-    flex-shrink: 0;
+.menuResponsive{
     background-color: aquamarine;
 }
 
-header .contenedorHeader .contenedorMenu-responsive .menu-responsive {
-    background-color: red;
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
-}
 
-header .contenedorHeader .contenedorMenu-responsive .menu-responsive i{
-    margin-top: 50%;
-}
-header .contenedorHeader .contenedorMenu-responsive .menu-responsive-displayer{
-    background-color: blueviolet;
-    display: flex;
-    flex-direction: column;
-    /*visibility: hidden; */
-}
 
-header .contenedorHeader .contenedorMenu-responsive .menu-responsive-displayer .listaMenuResponsive{
-    text-decoration: none;
-    list-style: none;
-}
-
-header .contenedorHeader .contenedorMenu-responsive .menu-responsive-displayer .listaMenuResponsive .MenuProyectos{
-    text-decoration: none;
-    list-style: none;
-}
-/* 
-menu escritorio
-*/
-header .contenedorHeader .contenedorMenu{
-    display: none;
-}
-
-/*  main  */
-
-.main{
-    background-color: blueviolet;
-}
-
-footer{
-    background-color: brown;
-}
-
-@media screen and (min-width:800px) {
-    body{
-        display: none;
-    }
+header div nav ul .menuItems{
+    background-color: bisque;
+    display: inline-block;
 }

@@ -1,7 +1,12 @@
 *{
     margin: 0;
     padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+/*body{
+    background-color: aqua;
+}*/
 
 /*
 60%# #0D1F2D
@@ -9,13 +14,142 @@
 10% F49F0A
 */
 
-.menuResponsive{
-    background-color: aquamarine;
+
+
+
+/*
+    Estilos menu header responsive
+*/
+
+header{
+    background-color: #0D1F2D;
+    width: 100%;
+    border-bottom:2px solid #ffffff  ;
+    font-size: large;
+}
+
+header nav{
+    
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav .logo{
+    margin-top: 2px;
+    align-items: center;
+    
+}
+
+header nav .logo img{
+    background-color: #f49f0a;
+    border-radius: 60%;
+}
+
+header nav .responsive {
+    margin-top: 10px;
+    width: 54px;
+    height: 54px;
+
+    background-color: #f49f0a;
+    border-radius: 50%;
+}
+
+header nav .responsive img{
+    width: 30px;
+    height: 30px;
+    padding: 12px 12px;
+}
+
+header nav .responsive div{
+    visibility: hidden;
+}
+
+header nav .responsive:hover div .menu{
+    visibility: visible;
+}
+
+header nav .responsive div .menu{
+    position: relative;
+    top: 6px;
+    right: 300px;
+
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+}
+
+header nav .responsive div .menu .lista{
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #0D1F2D ;
+    border-bottom:2px  solid #ffffff;
+    list-style: none;
+    justify-content: center;
+
+    padding: 10px;
+    width: 250px;
+    height: 40px;
+}
+header nav .responsive div .menu .lista:first-child span{
+    position: relative;
+    right: -130px;
+}
+
+header nav .responsive div .menu .lista a{
+    display: inline-block;
+
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header nav .responsive div .menu .lista .subMenu{
+    visibility: hidden;
+}
+
+header nav .responsive div .menu:first-child:hover .lista .subMenu{
+    visibility: visible;
+    position: relative;
+    top: 50px;
+    right: 35px;
+}
+
+header nav .responsive div .menu .lista .subMenu .subLista{
+    background-color: #0d1f2a ;
+    opacity: .9;
+    border-bottom:2px  solid #ffffff;
+    list-style: none;
+    text-align: center;
+
+    padding: 10px;
+    width: 244px;
+    height: 40px;
+}
+
+header nav .responsive div .menu .lista .subMenu .subLista a{
+    text-decoration: none;
+    color: #ffffff;
+
 }
 
 
 
-header div nav ul .menuItems{
-    background-color: bisque;
-    display: inline-block;
+
+/*  
+    Estilos del contenido
+*/
+
+/* presentacion */
+
+.content .presentacion .tarjeta .contenedorPresentacion{
+    width: 100%;
+    height: 198px;
+}
+
+.content .presentacion .tarjeta .contenedorPresentacion img{
+    object-fit: cover;
 }

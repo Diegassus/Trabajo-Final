@@ -96,10 +96,13 @@ header .menu .menuLista .item .subItem:hover{
     estilos de la presentacion
 */
 
+
+
 .presentacion{
     display: flex;
     border-top: #F1FFFA 2px solid;
     border-bottom: #F1FFFA 2px solid;
+    background-color: #272838;
 }
 
 .presentacion .imagen{
@@ -123,4 +126,33 @@ header .menu .menuLista .item .subItem:hover{
 
 .presentacion:last-child .imagen .contenedorFoto{
     border-left: #F1FFFA 2px solid;
+}
+
+
+.textoP{
+    position: absolute;
+   top: 140px;
+   left: 500px;
+   text-align: center;
+}
+
+.textoP .title{
+    color: #272838;
+    text-shadow:2px 2px 4px #272800;
+    background-color: #FFA630;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+.textoP .contenedorTexto{
+    margin-top: 180px;
+}
+
+.textoP .contenedorTexto p{
+    font-weight: bolder;
+    font-family: sans-serif;
+    color: #F1FFFA ;
+    padding: 5px;
 }

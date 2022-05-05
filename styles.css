@@ -72,6 +72,8 @@ header .menu .menuLista .item .proyectos{
     display: none;
     position: absolute;
     min-width: 150px;
+    z-index: 100;
+    list-style: none;
 }
 
 header .menu .menuLista .item:hover > .proyectos{
@@ -128,7 +130,6 @@ header .menu .menuLista .item .subItem:hover{
     border-left: #F1FFFA 2px solid;
 }
 
-
 .textoP{
     position: absolute;
    top: 140px;
@@ -155,4 +156,13 @@ header .menu .menuLista .item .subItem:hover{
     font-family: sans-serif;
     color: #F1FFFA ;
     padding: 5px;
+}
+
+
+/*
+   estilos carrusel
+*/
+
+.carrusel {
+background-color: #272838;
 }

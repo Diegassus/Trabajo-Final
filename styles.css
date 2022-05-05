@@ -1,181 +1,126 @@
 *{
     margin: 0;
     padding: 0;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/*body{
-    background-color: aqua;
-}*/
-
 /*
-60%# #0D1F2D
-30% 22162B
-10% F49F0A
+60=#272838
+30=#F1FFFA
+10=#FFA630
 */
 
-
-
-
-/*
-    Estilos menu header responsive
-*/
+/* estilos del header */
+header nav ul a{
+    color: #F1FFFA;
+    text-decoration: none;
+}
 
 header{
-    background-color: #0D1F2D;
-    width: 100%;
-    border-bottom:2px solid #ffffff  ;
-    font-size: large;
+    background-color: #272838;
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    font-family: sans-serif;
 }
 
-header nav{
-    
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-
+header .Logo{
     display: flex;
     justify-content: space-between;
+    margin-top: 3px;
 }
 
-header nav .logo{
-    margin-top: 2px;
-    align-items: center;
-    
-}
-
-header nav .logo img{
-    background-color: #f49f0a;
-    border-radius: 60%;
-}
-
-header nav .responsive {
-    margin-top: 10px;
-    width: 54px;
-    height: 54px;
-
-    background-color: #f49f0a;
+header .Logo img{
+    width: 60px;
+    height: 60px;
+    background-color: #FFA630;
     border-radius: 50%;
+    
 }
 
-header nav .responsive img{
-    width: 30px;
-    height: 30px;
-    padding: 12px 12px;
+header .Logo .LogoTexto{
+    padding-top: 22px;
+    padding-left: 20px;
+    color :#F1FFFA;
+    font-weight:bold;
+    font-size: larger;
 }
 
-header nav .responsive div{
-    visibility: hidden;
-}
-
-header nav .responsive:hover div .menu{
-    visibility: visible;
-}
-
-header nav .responsive div .menu{
-    position: relative;
-    top: 6px;
-    right: 300px;
-    z-index: 200;
+header .menu  .menuLista{
     display: flex;
-    flex-direction: column-reverse;
-    flex-wrap: wrap;
-}
-
-header nav .responsive div .menu .lista{
-    display: flex;
-    justify-content: space-between;
-
-    background-color: #0D1F2D ;
-    border-bottom:2px  solid #ffffff;
     list-style: none;
-    justify-content: center;
-
-    padding: 10px;
-    width: 250px;
-    height: 40px;
-}
-header nav .responsive div .menu .lista:first-child span{
-    position: relative;
-    right: -130px;
 }
 
-header nav .responsive div .menu .lista a{
-    display: inline-block;
-
-    text-decoration: none;
-    color: #ffffff;
+header .menu  .menuLista a{
+    display: block;
 }
 
-header nav .responsive div .menu .lista .subMenu{
-    visibility: hidden;
+header .menu .menuLista .item{
+    padding: 25px 30px;
+    background-color: #272838;
+    float: left;
+    border-left: #F1FFFA 2px solid;
+}
+header .menu .menuLista:last-child{
+    border-right: #F1FFFA 2px solid;
 }
 
-header nav .responsive div .menu:first-child:hover .lista .subMenu{
-    visibility: visible;
-    position: relative;
-    top: 50px;
-    right: 35px;
+header .menu .menuLista .item:hover{
+    background-color: #272800;
 }
 
-header nav .responsive div .menu .lista .subMenu .subLista{
-    background-color: #0d1f2a ;
-    opacity: .9;
-    border-bottom:2px  solid #ffffff;
-    list-style: none;
-    text-align: center;
-
-    padding: 10px;
-    width: 244px;
-    height: 40px;
+header .menu .menuLista .item .proyectos{
+    display: none;
+    position: absolute;
+    min-width: 150px;
 }
 
-header nav .responsive div .menu .lista .subMenu .subLista a{
-    text-decoration: none;
-    color: #ffffff;
-
+header .menu .menuLista .item:hover > .proyectos{
+    display: block;
+    right: 396px;
+    top: 68px;
 }
 
+header .menu .menuLista .item .subItem{
+    padding: 15px 20px;
+    width: 100%;
+    background-color: #272838;
+    float: left;
+    border-bottom:#F1FFFA 2px solid;
+}
 
+header .menu .menuLista .item .subItem:hover{
+    background-color: #272800;
+}
 
-
-/*  
-    Estilos del contenido
+/*
+    estilos de la presentacion
 */
 
-/* presentacion */
-
-.content .presentacion .tarjeta .contenedorPresentacion{
-    width: 100%;
-    height: 198px;
-    border-bottom:2px solid #0D1F2D  ;
+.presentacion{
+    display: flex;
+    border-top: #F1FFFA 2px solid;
+    border-bottom: #F1FFFA 2px solid;
 }
 
-.content .presentacion .tarjeta .contenedorPresentacion img{
+.presentacion .imagen{
+    flex-grow: 1;
+    flex-shrink: 0;
+    height: 70vh;
+}
+
+.presentacion .imagen .contenedorFoto{
     width: 100%;
-    height: 198px;
-    object-fit: cover;
+    height: 100%;
     
 }
 
-.content .presentacion .tarjeta .contenedorPresentacion .textoPresentacion{
-    position: relative;
-    z-index: 100;
-    text-align: center;
-    bottom: 115px;
-    color: #ffffff;
-    font-weight: 900;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.presentacion .imagen .contenedorFoto .foto{
+    object-fit:cover;
+    width: 424px;
+    height: 427px;
+    border-right: #F1FFFA 2px solid;
 }
 
-.content .presentacion .tarjeta .contenedorPresentacion .textoPrincipal{
-    position: relative;
-    padding: 5px 10px;
-    z-index: 100;
-    text-align: center;
-    bottom: 115px;
-    color: #0D1F2D;
-    background-color: #f49f0a;
-    font-weight:bolder ;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.presentacion:last-child .imagen .contenedorFoto{
+    border-left: #F1FFFA 2px solid;
 }

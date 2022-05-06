@@ -147,6 +147,10 @@ header .menu .menuLista .item .subItem:hover{
     font-family: sans-serif;
 }
 
+.textoP .title:hover{
+    text-shadow:2px 2px 4px #F1FFFA;
+}
+
 .textoP .contenedorTexto{
     margin-top: 180px;
 }
@@ -165,4 +169,13 @@ header .menu .menuLista .item .subItem:hover{
 
 .carrusel {
 background-color: #272838;
+
+}
+
+.carrusel .titulo{
+text-align: center;
+padding: 10px;
+font-weight: bolder;
+    font-family: sans-serif;
+    color: #F1FFFA;
 }

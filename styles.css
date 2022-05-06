@@ -194,6 +194,11 @@ font-weight: bolder;
     z-index: 10;
     position: absolute;
     width: 100%;
+    clip-path: circle(0.0% at 0 50%);
+}
+
+.carrusel .contenedor .slider.active{
+    clip-path: circle(150.0% at 0 50%);
 }
 
 .carrusel .contenedor .slider img{
@@ -250,3 +255,4 @@ font-weight: bolder;
     border-radius: 50%;
     cursor: pointer;
 }
+

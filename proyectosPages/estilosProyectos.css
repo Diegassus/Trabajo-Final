@@ -1,6 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    
+}
+
+body{
+    background-color: #a6b0ad;
 }
 
 button{
@@ -141,7 +146,7 @@ header .menu .menuLista .item .subItem:hover{
 
 .contenedor .catalogo .item .info {
     padding: 50px;
-    background-color: #a6b0ad;
+    background-color: #F1FFFA;
     font-family: sans-serif;
     position: relative;
     

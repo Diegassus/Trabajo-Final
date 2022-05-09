@@ -6,6 +6,20 @@
 }
 
 /*
+estilos de botones
+*/ 
+
+button{
+    background-color: #FFA630;
+    padding: 10px;
+    font-family: sans-serif;
+    font-weight: 800;
+    border-radius: 30px;
+    color: #272838;
+    border-color: #F1FFFA;
+}
+
+/*
 60=#272838
 30=#F1FFFA
 10=#FFA630
@@ -171,7 +185,7 @@ header .menu .menuLista .item .subItem:hover{
 
 .carrusel {
 background-color: #272838;
-
+padding-bottom: 50px;
 }
 
 .carrusel .titulo{
@@ -188,6 +202,7 @@ font-weight: bolder;
     width: 800px;
     height: 500px;
     margin: 10px;
+    padding-left: 16.5%;
 }
 
 .carrusel .contenedor .slider{
@@ -227,13 +242,20 @@ font-weight: bolder;
 .carrusel .contenedor .slider .info .juego{
     font-weight: bolder;
     font-family: sans-serif;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 
 }
 
 .carrusel .contenedor .slider .info .desc{
-    font-weight:500;
+    font-weight:400;
     font-family: "Poppins";
+}
+
+
+.carrusel .contenedor .slider .botonMasInfo{
+    position: absolute;
+    left: 50%;
+    top: 88%;
 }
 
 .carrusel .contenedor .nav{
@@ -242,7 +264,7 @@ font-weight: bolder;
     display: flex;
     flex-direction: column;
     bottom: 38%;
-    left: 98%;
+    left: 123%;
     transform: translateX(-50%);
 }
 
@@ -256,3 +278,37 @@ font-weight: bolder;
     cursor: pointer;
 }
 
+/*
+  Spot de informacion
+*/
+
+.spotInfo{
+    color: #272838;
+}
+
+.spotInfo .texto{
+    color: #272838;
+    font: 2em sans-serif;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.spotInfo .botones{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.spotInfo .botones button{
+    height: 60px;
+    width: 200px;
+    margin-bottom: 50px;
+}
+
+footer{
+    background-color: #272838;
+    text-align: center;
+    color: #F1FFFA;
+    font-family: sans-serif;
+    padding: 30px;
+}

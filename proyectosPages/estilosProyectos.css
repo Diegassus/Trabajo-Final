@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    background-color: #FFA630;
+    padding: 10px;
+    font-family: sans-serif;
+    font-weight: 800;
+    border-radius: 30px;
+    color: #272838;
+    border-color: #F1FFFA;
+}
+
+/*
+60=#272838
+30=#F1FFFA
+10=#FFA630
+*/
+
+header nav ul a{
+    color: #F1FFFA;
+    text-decoration: none;
+}
+
+header{
+    background-color: #272838;
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    font-family: sans-serif;
+}
+
+header .Logo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3px;
+}
+
+header .Logo img{
+    width: 60px;
+    height: 60px;
+    background-color: #FFA630;
+    border-radius: 50%;
+    
+}
+
+header .Logo .LogoTexto{
+    padding-top: 22px;
+    padding-left: 20px;
+    color :#F1FFFA;
+    font-weight:bold;
+    font-size: larger;
+}
+
+header .menu  .menuLista{
+    display: flex;
+    list-style: none;
+}
+
+header .menu  .menuLista a{
+    display: block;
+}
+
+header .menu .menuLista .item{
+    padding: 25px 30px;
+    background-color: #272838;
+    float: left;
+    border-left: #F1FFFA 2px solid;
+}
+header .menu .menuLista:last-child{
+    border-right: #F1FFFA 2px solid;
+}
+
+header .menu .menuLista .item:hover{
+    background-color: #272800;
+}
+
+header .menu .menuLista .item .proyectos{
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    z-index: 100;
+    list-style: none;
+}
+
+header .menu .menuLista .item:hover > .proyectos{
+    display: block;
+    right: 396px;
+    top: 68px;
+}
+
+header .menu .menuLista .item .subItem{
+    padding: 15px 20px;
+    width: 100%;
+    background-color: #272838;
+    float: left;
+    border-bottom:#F1FFFA 2px solid;
+}
+
+header .menu .menuLista .item .subItem:hover{
+    background-color: #272800;
+}
+
+/*
+    catalogo
+*/
+
+.contenedor{
+    padding-left:10%;
+    padding-right: 10%;
+}
+
+.contenedor .catalogo .item{
+    display: flex;
+    padding: 50px 0px;
+    margin-bottom: 20px;
+}
+
+.contenedor .catalogo .item .contFoto{
+    height: 350px;
+    width: 300px;
+    background-color: #272838;
+    padding: 25px;
+    padding-bottom: 12%;
+    border-radius: 3px;
+}
+
+.contenedor .catalogo .item .contFoto .img{
+    object-fit:cover ;
+    height: 100%;
+    width: 100%;
+}
+
+.contenedor .catalogo .item .contFoto .titulo{
+    height: 100px;
+    width: 200px;
+    
+}
+
+.contenedor .catalogo .item .info {
+    padding: 50px;
+    background-color: #F1FFFA;
+    font-family: sans-serif;
+    position: relative;
+    
+}
+
+.contenedor .catalogo .item .info .reseña{
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.contenedor .catalogo .item .info .enlace{
+   position: absolute;
+   bottom: 30px;
+   left: 40%;
+}

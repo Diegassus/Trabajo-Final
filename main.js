@@ -1,27 +1,23 @@
 // armado de carrusel
 
-var slides = document.querySelectorAll('.slider');
-var indices = document.querySelectorAll('.indice');
-let frente = 1;
+var slider = new Array;
+slider[1] = document.getElementById('1');
+slider[2] = document.getElementById('2');
+slider[3] = document.getElementById('3');
+slider[4] = document.getElementById('4');
+slider[5] = document.getElementById('5');
+slider[6] = document.getElementById('6');
 
-// manejo manual
-var manualNav=function(manual){
-    slides.forEach((slide)=>{
-        slide.classList.remove('active');
+function mostrar(index){
+    slider[index].style.visibility=visible;
+    setear(index);
+};
 
-        indices.forEach((indice)=>{
-            indice.classList.remove('active');
-        });
-    });
-
-    slides[manual].classList.add('active');
-    indices[manual].classList.add('active');
-}
-
-indices.forEach((indice,i)=>{
-    indice.addEventListener('click',()=>{
-        manualNav(i);
-        frente=i;
+function setear(index){
+    for(i=1; i<index;i++){
+        slider[i].style.visibility=hidden;
     }
-    );
-});
+    for(i=index+1; i<6;i++){
+        slider[i].style.visibility=hidden;
+    }
+}

@@ -19,6 +19,11 @@ button{
     border-color: #F1FFFA;
 }
 
+input{
+    border-style: solid;
+}
+
+
 /*
 60=#272838
 30=#F1FFFA
